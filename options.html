@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Highlight Styles</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .form-group { margin-bottom: 15px; }
+    @media (max-width: 600px) {
+      body { padding: 10px; }
+      .form-group input, .form-group label { display: block; width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Customize Highlight Styles</h1>
+  <div class="form-group">
+    <label for="highlightColor">Default Highlight Color:</label>
+    <input type="color" id="highlightColor" value="#FFFF00">
+  </div>
+  <div class="form-group">
+    <label for="highlightStyle">Highlight CSS Styles:</label>
+    <input type="text" id="highlightStyle" placeholder="e.g., font-weight: bold; border-radius: 5px;">
+  </div>
+  <button id="saveButton">Save</button>
+  <script src="options.js"></script>
+</body>
+</html>

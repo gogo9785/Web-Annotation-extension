@@ -1,0 +1,22 @@
+.highlighted {
+  cursor: pointer;
+  position: relative;
+}
+
+.highlighted::after {
+  content: attr(data-note);
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  display: none;
+  white-space: pre-wrap;
+  z-index: 10;
+}
+
+.highlighted:hover::after {
+  display: block;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search Annotations</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .form-group { margin-bottom: 15px; }
+    .annotation { margin-bottom: 10px; }
+    @media (max-width: 600px) {
+      body { padding: 10px; }
+      .form-group input, .form-group label { display: block; width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Search Annotations</h1>
+  <div class="form-group">
+    <label for="searchKeyword">Keyword:</label>
+    <input type="text" id="searchKeyword">
+  </div>
+  <div class="form-group">
+    <label for="searchCategory">Category:</label>
+    <input type="text" id="searchCategory">
+  </div>
+  <div class="form-group">
+    <label for="searchDate">Date:</label>
+    <input type="date" id="searchDate">
+  </div>
+  <button id="searchButton">Search</button>
+  <div id="results"></div>
+  <script src="search.js"></script>
+</body>
+</html>

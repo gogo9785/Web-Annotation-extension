@@ -1,0 +1,23 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 10px;
+}
+
+.color-option, .category-option, .note-container {
+  margin: 5px 0;
+}
+
+#options-links a {
+  display: block;
+  margin: 5px 0;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 5px;
+  }
+
+  textarea {
+    width: 100%;
+  }
+}

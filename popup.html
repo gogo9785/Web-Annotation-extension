@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text Highlighter</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 10px; }
+    .color-option, .category-option, .note-container { margin: 5px 0; }
+    #options-links a { display: block; margin: 5px 0; }
+    @media (max-width: 600px) {
+      body { padding: 5px; }
+      textarea { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Text Highlighter</h1>
+  <div class="color-option">
+    <input type="color" id="highlightColor" value="#FFFF00">
+    <label for="highlightColor">Choose highlight color</label>
+  </div>
+  <div class="category-option">
+    <input type="text" id="category" placeholder="Enter category">
+  </div>
+  <button id="highlightButton">Highlight Selected Text</button>
+  <div class="note-container">
+    <textarea id="note" rows="4" cols="30" placeholder="Add a note..."></textarea>
+  </div>
+  <div id="options-links">
+    <a href="options.html" target="_blank">Customize Highlight Styles</a>
+    <a href="search.html" target="_blank">Search Annotations</a>
+  </div>
+  <button id="exportButton">Export Annotations</button>
+  <p>Shortcuts:</p>
+  <ul>
+    <li>Highlight: Ctrl+Shift+H</li>
+    <li>Add Note: Ctrl+Shift+N</li>
+    <li>Export: Ctrl+Shift+E</li>
+  </ul>
+  <script src="popup.js"></script>
+</body>
+</html>
